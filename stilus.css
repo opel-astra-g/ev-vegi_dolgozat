@@ -1,0 +1,61 @@
+*  {
+    box-sizing: border-box; /*nekem nem kellett dogát írni*/
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+    color: black;
+
+}
+nav {
+    background-color: aquamarine;
+    padding: 1rem;
+
+}
+a{
+    color: red;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+a:hover{
+    background-color: beige;
+}
+h1{
+    text-align: center;
+}
+article {
+    max-width: 900px;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+section {
+    padding: 10pt;
+
+}
+.szoveg{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 10px;
+    text-align: justify;
+
+}
+img {
+    width: 100%;
+}
+   
+@media screen and (max-width:600px){
+    body {
+        font-size: larger;
+        width: 100%;
+    }
+    nav {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .szoveg {
+        grid-template-columns: 1fr;
+    }
+}
